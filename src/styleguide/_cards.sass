@@ -1,0 +1,53 @@
+
+.card
+	+common
+	position: relative
+	transition: all 200ms
+	flex-basis: 100%
+	flex: 1
+	+shadow-box-1
+	+corner-2
+	// margin: $space-1
+	// margin-bottom: $space-4
+	border: solid 1px $color-grey-2
+	padding: $space-3
+	width: auto
+	display: inline-block
+	background: $color-white
+	&__small
+		+corner-1
+		min-width: 120px
+		// width: 120px
+		max-width: 150px
+		padding: 8px
+		margin: $space-1
+		flex: 1
+		flex-basis: 100%
+	&__medium
+		min-width: 250px
+		max-width: 320px
+		padding: 16px
+	&__bleed
+		+corner-1
+		min-width: 120px
+		max-width: 150px
+		margin: $space-2 auto
+		padding: 0
+		flex: 1
+		flex-basis: 100%
+
+
+
+	&:hover
+		padding: 0
+		transform: scale(1.05)
+		z-index: 100
+
+
+.popup
+	+common
+	position: fixed
+	top: 0
+	left: 0
+	margin: 0 !important
+	&__tooltip

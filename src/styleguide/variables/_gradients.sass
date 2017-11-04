@@ -1,0 +1,10 @@
+
+/* Gradients */
+@function gradient-strong($color, $direction)
+	@return linear-gradient(to $direction, rgba($color, 0), rgba($color, 1))
+
+@function gradient-medium($color, $direction)
+	@return linear-gradient(to $direction, rgba($color, 0), rgba($color, 0.7))
+
+@function gradient-light($color, $direction)
+	@return linear-gradient(to $direction, rgba($color, 0), rgba($color, 0.4))

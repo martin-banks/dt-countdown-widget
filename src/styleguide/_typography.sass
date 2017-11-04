@@ -1,0 +1,33 @@
+
+*.text
+	+reset
+	text-transform: none
+	border: none
+	text-align: left
+	display: block
+	&__head
+		+font-sans-medium
+		margin-bottom: $space-4
+
+	&__par
+		+font-serif-light
+		margin-bottom: $space-4
+	&__parSans
+		+font-sans-light
+		margin-bottom: $space-4
+
+	&__span
+		+common
+		+font-sans-light
+
+	&__caps
+		+font-sans-medium
+		text-transform: uppercase
+		font-size: $space-3
+
+
+span.number
+	&__big
+		+font-sans-bold
+		color: #bada55
+		font-size: 100px
