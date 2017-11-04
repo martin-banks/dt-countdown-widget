@@ -2,6 +2,7 @@
 	"projectName": "project_name",
 	"section": "network",
 	"path": {
+    "HOT": ".",
     "UAT": ".",
     "PROD": "https://news-networkeditorial.s3.amazonaws.com/T3Interactives"
 	},
