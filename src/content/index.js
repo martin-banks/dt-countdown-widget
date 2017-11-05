@@ -7,7 +7,8 @@ const Content = {
 		title: 'SSM vote results',
 		intro: '',
 	},
-
+	time: 'Nov 14, 2017 11:00:00',
+	message: 'Full results released in',
 	parts: [],
 }
 

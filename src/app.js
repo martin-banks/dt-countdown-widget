@@ -1,11 +1,11 @@
 // import Config from './config.json'
 // import Styles from './app.sass'
-// import Content from './content/index'
+import Content from './content/index'
 import start from './startApp'
 import layout from './layout'
 import STATE from './state'
 
-const targetDate = new Date("Nov 14, 2017 11:00:00").getTime()
+const targetDate = new Date(Content.time).getTime()
 
 // Start and Render app
 const APP = start({ inner: layout() })
@@ -26,7 +26,7 @@ function displayTime() {
   const showMins = (days > 0 || hours > 0 || minutes > 0) ? `${minutes} minutes` : ''
   const showSecs = (days > 0 || hours > 0 || minutes > 0 || seconds > 0) ? `${seconds} seconds` : ''
 
-  countdownWrapper.innerHTML = `Full results released in ${showDays}, ${showHours}, ${showMins}, ${showSecs}`
+  countdownWrapper.innerHTML = `${Content.message} ${showDays}, ${showHours}, ${showMins}, ${showSecs}`
 }
 displayTime()
 setInterval(displayTime, 1000)
