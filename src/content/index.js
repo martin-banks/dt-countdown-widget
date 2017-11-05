@@ -4,8 +4,8 @@
 
 const Content = {
 	header: {
-		title: 'Hello world',
-		intro: 'The app has rendered!!',
+		title: 'SSM vote results',
+		intro: '',
 	},
 
 	parts: [],

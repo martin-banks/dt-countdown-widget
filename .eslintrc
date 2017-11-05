@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jquery": false
+  },
+  "extends": "airbnb",
+  "rules": { 
+    "no-tabs": "off",
+    "indent": ["warn", "space"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-trailing-spaces": ["warn", { "skipBlankLines": false }],
+    "padded-blocks": ["warn", "never"],
+    "max-len": ["warn", 120,
+      {
+        "ignoreComments": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-unused-vars": [ "warn", { "argsIgnorePattern": "body|res|err" }],
+    "no-plusplus": "off",
+    "no-extra-boolean-cast": "warn",
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "quotes": ["warn", "single"],
+    "camelcase": ["warn", { "properties": "never" }],
+    "semi": "off",
+    "prefer-const": 2,
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "ignore"
+    }]
+  }
+
+  
+}
