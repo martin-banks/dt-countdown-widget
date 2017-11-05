@@ -49,9 +49,9 @@ setInterval(() => {
     hsl(300, ${s}%, ${l}%), 
     hsl(360, ${s}%, ${l}%)
   )`
-  r += 0.1
+  r += 0.2
   if (r > 360) r = 0
-}, 16)
+}, 24)
 
 
 // const d = new Date()
